@@ -67,6 +67,9 @@
             "optional": true
         }
     },
+    "files": [
+        "dist"
+    ],
     "keywords": [],
     "author": "",
     "license": "ISC"
