@@ -1,0 +1,73 @@
+{
+    "name": "yma-test-config",
+    "version": "1.0.0",
+    "description": "基于 jest 的简易单元测试配置集合",
+    "main": "./dist/index.js",
+    "scripts": {
+        "init": "rm -rf package-lock.json && npm install",
+        "start": "npm run build -- -w",
+        "build": "npm run clean && tsc -p src",
+        "clean": "rm -fr dist"
+    },
+    "dependencies": {
+        "@types/jest": "27.4.1",
+        "@types/jsdom": "16.2.14",
+        "@types/sinon": "9.0.11",
+        "deepmerge": "4.2.2",
+        "jest": "27.5.1",
+        "jest-environment-jsdom-fifteen": "1.0.2",
+        "jest-serializer-vue": "2.0.2",
+        "jest-transform-stub": "2.0.0",
+        "jest-watch-typeahead": "1.0.0",
+        "jsdom": "19.0.0",
+        "joi": "17.6.0",
+        "sinon": "13.0.2"
+    },
+    "devDependencies": {
+        "@types/node": "17.0.25",
+        "typescript": "4.1.3"
+    },
+    "peerDependencies": {
+        "@babel/core": "^7.17.9",
+        "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+        "@babel/plugin-transform-runtime": "^7.17.0",
+        "@babel/preset-env": "^7.16.11",
+        "@vue/test-utils": "^2.0.0-rc.21",
+        "babel-jest": "^27.5.1",
+        "ts-jest": "^27.1.4",
+        "typescript": "^4.1.3",
+        "vue-jest": "^4.0.0-rc.0"
+    },
+    "peerDependenciesMeta": {
+        "@babel/core": {
+            "optional": true
+        },
+        "@babel/plugin-transform-modules-commonjs": {
+            "optional": true
+        },
+        "@babel/plugin-transform-runtime": {
+            "optional": true
+        },
+        "@babel/preset-env": {
+            "optional": true
+        },
+        "@vue/test-utils": {
+            "optional": true
+        },
+        "babel-jest": {
+            "optional": true
+        },
+        "ts-jest": {
+            "optional": true
+        },
+        "typescript": {
+            "optional": true
+        },
+        "vue-jest": {
+            "optional": true
+        }
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
